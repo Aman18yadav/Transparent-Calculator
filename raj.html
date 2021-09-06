@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url("7.jpg");
+            margin:20px;
+            padding:5px;
+        }
+        
+        #clear{
+            width:52px;
+        }
+        .formstyle{
+            width:215px;
+            height:400px;
+            margin:auto;
+           border:5px solid wheat;
+           background-image: url("4.jpg");
+           padding:50px;
+           border-radius: 35px;
+           
+          
+        }
+        input{
+            width:50px;
+            background-color: blueviolet;
+            color: white;
+            height:20px;
+        }
+        #answerstyle{
+            width:205px;
+            height:33px;
+            border:3px solid wheat;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .formstyle h{
+            color:blueviolet;
+            font-size:27px;
+        }
+        .weight{
+            background-color:blueviolet;
+            color:white;
+            width:214px;
+        }
+        .weight a{
+            color:white;
+            text-decoration: none;
+        }
+        .speed{
+            background-color:blueviolet;
+            color:white;
+            width:214px;
+        }
+        .speed a{
+            color:white;
+            text-decoration: none;
+        }
+        .temperature{
+            background-color:blueviolet;
+            color:white;
+            width:214px;
+        }
+        .temperature a{
+            color:white;
+            text-decoration: none;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="formstyle">
+        <h><b>CALCULATOR</b></h>
+        <hr>
+        <form name="forms">
+            <input type="text" name="answer" id="answerstyle"> <br> </br> 
+            <input type="button" value="1" onclick="form.answer.value += '1' ">
+            <input type="button" value="2" onclick="form.answer.value += '2' ">
+            <input type="button" value="3" onclick="form.answer.value += '3' ">
+            <input type="button" value="+" onclick="form.answer.value += '+' ">
+            <br></br>
+
+            <input type="button" value="4" onclick="form.answer.value += '4' ">
+            <input type="button" value="5" onclick="form.answer.value += '5' ">
+            <input type="button" value="6" onclick="form.answer.value += '6' ">
+            <input type="button" value="-" onclick="form.answer.value += '-' ">
+            <br> </br>
+
+            <input type="button" value="7" onclick="form.answer.value += '7' ">
+            <input type="button" value="8" onclick="form.answer.value += '8' ">
+            <input type="button" value="9" onclick="form.answer.value += '9' ">
+            <input type="button" value="*" onclick="form.answer.value += '*' ">
+            <br> </br>
+
+            <input type="button" value="0" onclick="form.answer.value += '0' ">
+            <input type="button" value="00" onclick="form.answer.value += '00' ">
+            <input type="button" value="." onclick="form.answer.value += '.' ">
+            <input type="button" value="/" onclick="form.answer.value += '/' ">
+            <br></br>
+    
+            <input type="button" value="(" onclick="form.answer.value += '(' ">
+            <input type="button" value=")" onclick="form.answer.value += ')' ">
+            <input type="button" value="=" onclick="form.answer.value= eval(form.answer.value)">
+            <input type="button" value="clear" onclick="form.answer.value =' '  " id="clear">
+            
+
+            <br> </br>
+            <button class="weight"><a href="weight.html">weight converter</a></button>
+            <br></br>
+            <button class="speed"><a href="length.html">length converter</a></button>
+            <br></br>
+            <button class="temperature"><a href="temperature.html">temperature converter</a></button>
+          
+        </form>
+    </div>
+</body>
+</html>

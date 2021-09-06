@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url("7.jpg");
+            margin:20px;
+            padding:5px;
+        }
+        .formstyle{
+            width:214px;
+            height:400px;
+            margin:auto;
+           border:5px solid wheat;
+           background-image: url("4.jpg");
+           padding:50px;
+           border-radius: 35px;
+        }
+        .formstyle h{
+            color:blueviolet;
+            font-size:27px;
+        }
+        #inputMeters{
+            background-color: blueviolet;
+            width:205px;
+            height:33px;
+            border:3px solid wheat;
+            border-radius: 10px;
+            text-align:center;
+            color: white;
+            font-weight:bold;
+            
+        }  
+          p{
+            color:blueviolet;
+            font-size:28px;
+        } 
+        .back{
+            background-color: blueviolet;
+            border:3px solid wheat;
+            border-radius: 10px;
+            
+            
+        }
+        .back a{
+            color:white;
+            text-decoration:none;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="formstyle">
+        <h><b>CALCULATOR</b></h>
+        <hr>
+        <p>
+            <label>Meters</label>
+            <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+          </p>
+          <p>Kilometers: <span id="outputKilometers"></span></p>
+          
+          <script>
+          function LengthConverter(valNum) {
+            document.getElementById("outputKilometers").innerHTML=valNum/1000;
+          }
+          </script>
+
+          <button class="back"><a href="raj.html">Back</a></button>
+          
+        
+    </div>
+</body>
+</html>
